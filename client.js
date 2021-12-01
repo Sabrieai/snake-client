@@ -24,6 +24,29 @@ const connect = function() {
     conn.write('Name: AMS');
   });
 
+  /* conn.on('connect', () => {
+    conn.write('Move: up');
+  });
+
+  conn.on('connect', () => {
+    setTimeout(() => {
+      conn.write('Move: right');
+    } ,1000);
+  });
+
+  conn.on('connect', () => {
+    setTimeout(() => {
+      conn.write('Move: down');
+    } ,5000);
+  });
+
+  conn.on('connect', () => {
+    setTimeout(() => {
+      conn.write('Move: left');
+    } ,10000);
+  });
+*/
+
   return conn;
 };
 
