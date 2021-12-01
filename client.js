@@ -17,12 +17,10 @@ const connect = function() {
 
   //
   conn.on("connect", () => {
+    conn.write('Name: AMS');
     console.log("connection is successfully established");
   });
 
-  conn.on('connect', () => {
-    conn.write('Name: AMS');
-  });
 
   /* conn.on('connect', () => {
     conn.write('Move: up');
